@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Sicotrópico</title>
+    <meta name="description" content="¡Rock Pa Tu Madre!">
+    <meta property="og:title" content="Sicotrópico" />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:url" content="http://www.gamacreativos.com/sicotropico" />
+    <meta property="og:image" content="img/sicotropico-ogimg.jpg" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  </head>
+  <body>
+    <video autoplay loop poster="img/poster.jpg" id="bgvid">
+      <source src="img/videobg-3.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Música</a></li>
+            <li><a href="#">Shows</a></li>
+            <li><a href="#">Bio</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="text-center frame">
+      <span class="helper"></span>
+      <img src="img/sicotropico-logo-big.png" class="sicologo">
+    </div>
+    <footer>
+      <div class="sticky-footer">
+      <div class="text-center">
+        <a href="https://www.facebook.com/sicotropicorock" target="_blank"><span class="social-icon ion-social-facebook"></span></a>
+        <a href="https://twitter.com/sicotropicorock" target="_blank"><span class="social-icon ion-social-twitter"></span></a>
+        <a href="https://instagram.com/rockpatumadre" target="_blank"><span class="social-icon ion-social-instagram"></span></a>
+      </div>
+      <div class="text-center allrights">
+         ©2015 SICOTRÓPICO. TODOS LOS DERECHOS RESERVADOS
+      </div>
+      <div class="clear"></div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <!--        Fancyapps-->
+    <link rel="stylesheet" href="js/fancyapps/jquery.fancybox.css">
+    <script src="js/fancyapps/jquery.fancybox.js"></script>
+    <script src="js/fancyapps/jquery.fancybox.pack.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.fancyapps').fancybox();
+          });
+    </script>       
+    <script type="text/javascript">
+      $("a.more").click(function() {
+      $.fancybox({
+          'padding'       : 0,
+          'autoScale'     : false,
+          'transitionIn'  : 'none',
+          'transitionOut' : 'none',
+          'title'         : this.title,
+          'width'     : 680,
+          'height'        : 495,
+          'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+          'type'          : 'swf',
+          'swf'           : {
+               'wmode'        : 'transparent',
+              'allowfullscreen'   : 'true'
+          }
+      });
+      
+      return false;
+      });
+    </script>
+  </body>
+</html>
