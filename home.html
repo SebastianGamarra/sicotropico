@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Sicotrópico</title>
+    <meta name="description" content="¡Rock Pa Tu Madre!">
+    <meta property="og:title" content="Sicotrópico" />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:url" content="http://www.gamacreativos.com/sicotropico" />
+    <meta property="og:image" content="http://www.gamacreativos.com/sicotropico/img/sicotropico-ogimg.jpg" />
+    <meta property="og:description" content="¡Rock Pa Tu Madre!" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="jquery.fullPage.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    
+  </head>
+  <style>
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#main-album{
+		background-image: url(img/bg_musica.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section1{
+		background-image: url(img/bg_shows.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section2{
+		background-image: url(img/bg_bio.jpg);
+		padding: 6% 0 0 0;
+	}
+    #section3{
+		background-image: url(img/bg_galeria.jpg);
+		padding: 6% 0 0 0;
+	}
+    #section4{
+		background-image: url(img/bg_contacto.jpg);
+		padding: 6% 0 0 0;
+	}
+    #album-naranja{
+		background-image: url(img/bg_naranja.jpg);
+		padding: 6% 0 0 0;
+	}
+    #album-cuandoquieras{
+		background-image: url(img/bg_cuandoquieras.jpg);
+		padding: 6% 0 0 0;
+	}
+	</style>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a href="index.html"><img src="img/sicotropico-logo-big.png" class="navbar-brand logo-small hidden-sm hidden-md hidden-lg"></a>
+          <span class="xs-footer hidden-sm hidden-md hidden-lg">
+            <a href="https://www.facebook.com/sicotropicorock" target="_blank"><span class="social-icon ion-social-facebook"></span></a>
+            <a href="https://twitter.com/sicotropicorock" target="_blank"><span class="social-icon ion-social-twitter"></span></a>
+            <a href="https://instagram.com/rockpatumadre" target="_blank"><span class="social-icon ion-social-instagram"></span></a>
+          </span>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav" id="myMenu">
+            <li data-menuanchor="musica"><a href="#musica">Música</a></li>
+            <li data-menuanchor="shows"><a href="#shows">Shows</a></li>
+            <li data-menuanchor="bio"><a href="#bio">Bio</a></li>
+            <li data-menuanchor="galeria"><a href="#galeria">Galería</a></li>
+            <li data-menuanchor="contacto"><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="text-center hidden-xs">
+          <a href="index.html"><img src="img/sicotropico-logo-big.png" width="220" class="logo-small"></a>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <footer class="hidden-xs">
+      <div class="sticky-footer">
+      <div class="text-center">
+        <a href="https://www.facebook.com/sicotropicorock" target="_blank"><span class="social-icon ion-social-facebook"></span></a>
+        <a href="https://twitter.com/sicotropicorock" target="_blank"><span class="social-icon ion-social-twitter"></span></a>
+        <a href="https://instagram.com/rockpatumadre" target="_blank"><span class="social-icon ion-social-instagram"></span></a>
+      </div>
+      <div class="text-center allrights">
+         ©2015 SICOTRÓPICO. TODOS LOS DERECHOS RESERVADOS
+      </div>
+      <div class="clear"></div>
+      </div>
+    </footer>
+    <div id="fullpage">
+      <div class="section" id="section0">
+        <div class="slide" id="main-album">
+          <section class="container">
+            <div class="text-center">
+              <a href="#musica/1"><img src="img/album_naranja.jpg" width="300" class="album tool-tip" data-placement="bottom" title="Sicotrópico (2010)"></a>
+              <a href="#musica/2"><img src="img/album_cuandoquieras.jpg" width="300" class="album tool-tip" data-placement="bottom" title="Rock Pa Tu Madre (2012)"></a>
+            </div>
+          </section>
+        </div>
+        <div class="slide" id="album-naranja"></div>
+        <div class="slide" id="album-cuandoquieras"></div>
+      </div>
+      <div class="section" id="section1">
+        <section class="container section-padding">
+          <div class="col-md-6 col-xs-12 xs-no-padding">
+            <h1 class="section-title">Shows</h1>
+            <div class="bandsintown black-square">
+              <script type='text/javascript' src='http://www.bandsintown.com/javascripts/bit_widget.js'></script>
+              <a href='http://www.bandsintown.com' class='bit-widget-initializer' data-artist='Sicotropico'>Bandsintown</a>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </section>
+      </div>
+      <div class="section" id="section2">
+        <section class="container section-padding">
+          <div class="col-md-6 xs-no-padding" style="float:right">
+            <h1 class="section-title">Bio</h1>
+            <div class="black-square bio-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et interdum ex. Ut aliquam turpis nec ornare faucibus. Integer a lectus pharetra, gravida tortor ut, pretium lacus. Suspendisse potenti. Pellentesque eu ante non libero dapibus luctus. Vestibulum ultrices diam non lectus aliquet, nec condimentum felis luctus. Suspendisse egestas, odio vitae tempor porta, urna lorem viverra magna, at pellentesque nunc mauris non metus. Sed massa mi, hendrerit non aliquam ac, vehicula eu erat. Fusce gravida convallis felis, vitae molestie sem dignissim ac. Ut eu mattis diam, vitae dignissim lacus. Pellentesque nibh tellus, faucibus ac lectus volutpat, ultrices molestie ante. Etiam vestibulum ex sit amet rutrum bibendum. Nulla dui neque, finibus vel augue eu, ullamcorper rhoncus urna.
+            </div>
+          </div>
+          <div class="clear"></div>
+        </section>
+      </div>
+      <div class="section" id="section3">
+        <section class="container section-padding">
+          <div class="col-md-6 xs-no-padding">
+            <h1 class="section-title">Galería</h1>
+            <div class="black-square bio-content text-center">
+              <a href="img/gallery/_DSC0018.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0006__DSC0018.jpg" width="120" class="thumb"></a>
+              <a href="img/gallery/_DSC0022.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0005__DSC0022.jpg" width="120" class="thumb"></a>
+              <a href="img/gallery/_DSC0046.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0004__DSC0046.jpg" width="120" class="thumb"></a>
+              <a href="img/gallery/_DSC0123.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0003__DSC0123.jpg" width="120" class="thumb"></a>
+              <a href="img/gallery/_DSC0142.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0002__DSC0142.jpg" width="120" class="thumb"></a>
+              <a href="img/gallery/_DSC0151.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0001__DSC0151.jpg" width="120" class="thumb"></a>
+              <a href="img/gallery/_DSC0233.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0000__DSC0233.jpg" width="120" class="thumb"></a>
+              <a href="img/gallery/_DSC0279.jpg" class="fancyapps" data-fancybox-group="galeria" title="Sicotrópico"><img src="img/gallery/thumb/thumb_0007__DSC0279.jpg" width="120" class="thumb"></a>
+            </div>
+          </div>
+          <div class="col-md-6 xs-no-padding">
+            <h1 class="section-title">Vídeo</h1>
+            <div class="black-square bio-content">
+              
+            </div>
+          </div>
+          <div class="clear"></div>
+        </section>
+      </div>
+      <div class="section contacto" id="section4">
+        <section class="container section-padding">
+          <h1 class="section-title">Contacto / Management</h1>
+          <div class="col-md-4 xs-no-padding">
+            <div class="black-square contact-content">
+              <div><span class="contact-icon ion-android-person"></span>Omar Sánchez Vian</div>
+              <div><span class="contact-icon ion-android-mail"></span>rockpatumadre@gmail.com</div>
+              <div><span class="contact-icon ion-android-phone-portrait"></span>+57 316 627 0659</div>
+              <div><span class="contact-icon ion-location"></span>Barranquilla, Colombia</div>
+            </div>
+          </div>
+          <div class="col-md-4 xs-no-padding">
+            <div class="black-square contact-content">
+              <div><span class="contact-icon ion-android-person"></span>Ingard De Lima</div>
+              <div><span class="contact-icon ion-android-mail"></span>gerencia@gamacreativos.com</div>
+              <div><span class="contact-icon ion-android-phone-portrait"></span>+57 300 365 8781</div>
+              <div><span class="contact-icon ion-location"></span>Barranquilla, Colombia</div>
+            </div>
+          </div>
+          <div class="col-md-4 xs-no-padding">
+            <div class="black-square contact-content">
+              <div><span class="contact-icon ion-android-person"></span>Magda Valdivia</div>
+              <div><span class="contact-icon ion-android-mail"></span>dna.zav@gmail.com</div>
+              <div><span class="contact-icon ion-android-phone-portrait"></span>+5215514919068</div>
+              <div><span class="contact-icon ion-location"></span>México</div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/jquery.slimscroll.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#fullpage').fullpage({
+          anchors:['musica', 'shows', 'bio', 'galeria', 'contacto'],
+          menu: '#myMenu',
+          css3: true,
+          resize: false,
+          slidesNavigation: false,
+          verticalCentered: false,
+          controlArrows: false,
+          scrollingSpeed: 500,
+          scrollOverflow: true,
+        });
+      });
+    </script>
+    <script src="js/javascript.js"></script>
+    <!--        Fancyapps-->
+    <link rel="stylesheet" href="js/fancyapps/jquery.fancybox.css">
+    <script src="js/fancyapps/jquery.fancybox.js"></script>
+    <script src="js/fancyapps/jquery.fancybox.pack.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.fancyapps').fancybox();
+          });
+    </script>       
+    <script type="text/javascript">
+      $("a.more").click(function() {
+      $.fancybox({
+          'padding'       : 0,
+          'autoScale'     : false,
+          'transitionIn'  : 'none',
+          'transitionOut' : 'none',
+          'title'         : this.title,
+          'width'     : 680,
+          'height'        : 495,
+          'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+          'type'          : 'swf',
+          'swf'           : {
+               'wmode'        : 'transparent',
+              'allowfullscreen'   : 'true'
+          }
+      });
+      
+      return false;
+      });
+    </script>
+  </body>
+</html>

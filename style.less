@@ -31,18 +31,33 @@ html, body {
    -webkit-transform: translateZ(0);
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .navbar-default { /* Background and Border*/
   background-color: rgba(0,0,0,0);
   border-color: transparent;
-  z-index: 99;
+  z-index: 600;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: @sicoyellow;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: @sicoyellow;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
   color: @sicodarkyellow;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -84,7 +99,8 @@ html, body {
   text-align: center;
   position: absolute;
   top: 0;
-  z-index: -80;
+  z-index: -200;
+  -webkit-transform: translateZ(0);
 }
 
 .helper {
@@ -98,7 +114,7 @@ html, body {
 #bgvid {
     position: fixed !important; right: 0; bottom: 0;
     min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
+    width: auto; height: auto; z-index: -500;
     background: url(img/gallery/Foto-1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -116,21 +132,27 @@ html, body {
 }
 
 .social-icon {
-  font-size: 34px;
+  font-size: 24px;
   color: @sicoyellow;
-  padding: 15px 10px;
+  padding: 10px 7px;
 }
 
 .social-icon:hover {
   color: @sicodarkyellow;
 }
 
+.contact-icon {
+  font-size: 20px;
+  color: @sicoyellow;
+  padding-right: 10px;
+}
+
 .allrights {
   font-family: @proximanova_light;
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .sticky-footer {
@@ -139,10 +161,98 @@ html, body {
   left: 0;
   margin: 0 auto;
   width: 100%;
+  z-index: 10;
 }
 
+.logo-small {
+  position: relative;
+  opacity: 0.9;
+  transition: all 0.3s ease-in;
+}
 
+.logo-small:hover {
+  -webkit-filter: invert(1);
+  transition: all 0.3s ease-out;
+}
 
+.section-padding {
+  padding-top: 80px;
+}
+
+h1 {
+  font-family: @edosz;
+  color: white;
+  font-size: 3em;
+  padding-left: 15px;
+}
+
+.bandsintown a {
+  font-family: 'proximanova_regular' !important;
+}
+
+.bandsintown {
+  font-family: 'proximanova_regular' !important;
+}
+
+.black-square {
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px 15px;
+}
+
+.bio-content {
+  font-family: @proximanova_regular;
+  color: white;
+  font-size: 1em;
+  line-height: 160%;
+}
+
+.xs-footer {
+  position: absolute;
+  top: 10px;
+}
+
+.fancybox-skin {
+  padding: 0px 0px 0px 0px !important;
+}
+
+.thumb {
+  padding: 5px 5px;
+  transition: all 0.3s ease-in;
+}
+
+.thumb:hover {
+  -webkit-filter: brightness(2);
+  transition: all 0.3s ease-out;
+}
+
+.contact-content {
+  .bio-content;
+  font-size: 1.2em;
+}
+
+.album {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.7);
+  transition: all 0.2s ease-out;
+}
+
+.album:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+}
+
+.album-tooltip {
+  position: relative;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.tooltip {
+  font-family: @edosz;
+  font-size: 1.2em;
+}
 
 /* Ribbon */
 
@@ -172,9 +282,9 @@ and (orientation : portrait) {
   
 }
 
-@media (max-width: 400px) { /* Mobile iPhone 4, xs */
+@media (max-width: 420px) { /* Mobile iPhone 4, xs */
   .nav > li > a {
-    padding: 15px 30px;
+    padding: 10px 30px;
   }
   .sicologo {
     width: 80%;
@@ -187,11 +297,29 @@ and (orientation : portrait) {
     margin-top: 2px;
     letter-spacing: 1px;
   }
+  .section-padding {
+    padding-top: 20px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .bandsintown {
+    font-size: 0.8em !important;
+  }
+  .xs-no-padding {
+    padding: 0;
+  }
+  .bio-content {
+    font-size: 0.9em;
+  }
+  .social-icon {
+    font-size: 22px;
+  }
 }
 
-@media (max-height: 400px) and (max-width: 568px) and (orientation:landscape) {
+@media (max-width: 740px) and (orientation:landscape) {
   .nav > li > a {
-    padding: 15px 30px;
+    padding: 6px 30px;
   }
   .sicologo {
     width: 60%;
@@ -200,9 +328,27 @@ and (orientation : portrait) {
     background-color: rgba(0,0,0,0.5); 
   }
   .allrights {
-    font-size: 0.6em;
+    font-size: 0.5em;
     margin-top: 2px;
     letter-spacing: 1px;
+  }
+  .section-padding {
+    padding-top: 20px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .bandsintown {
+    font-size: 0.8em !important;
+  }
+  .xs-no-padding {
+    padding: 0;
+  }
+  .bio-content {
+    font-size: 0.9em;
+  }
+  .social-icon {
+    font-size: 22px;
   }
 }
 

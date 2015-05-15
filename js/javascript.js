@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   
- 
+  $('.tool-tip').tooltip();
   
   console.log("Hello");
   
