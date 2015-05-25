@@ -254,6 +254,40 @@ h1 {
   font-size: 1.2em;
 }
 
+.sc-widget {
+  width: 40%;
+  display: none;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 320px;
+  margin-left: 15px;
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.back-arrow:hover {
+  color: rgb(211, 211, 211);
+}
+
+.back-arrow-xs {
+  position: relative;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+.back-arrow-xs:hover {
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+}
+
+x {
+  font-size: 1.1em;
+  margin-left: 10px;
+  font-family: @proximanova_regular;
+  letter-spacing: -1px;
+}
 /* Ribbon */
 
 
@@ -315,6 +349,22 @@ and (orientation : portrait) {
   .social-icon {
     font-size: 22px;
   }
+  .sc-widget {
+    width: 100%;
+  }
+  .black-square {
+    padding: 15px 0px;
+  }
+  .album {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 65%;
+  }
+  .back-arrow-xs {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 740px) and (orientation:landscape) {
@@ -349,6 +399,14 @@ and (orientation : portrait) {
   }
   .social-icon {
     font-size: 22px;
+  }
+  .sc-widget {
+    width: 55%;
+    margin-top: 5px;
+    margin-bottom: 80px;
+  }
+  .album {
+    width: 40%;
   }
 }
 

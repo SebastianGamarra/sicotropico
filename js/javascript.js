@@ -4,6 +4,8 @@ $( document ).ready(function() {
   
   console.log("Hello");
   
+  $('.sc-widget').show();
+  
     //Smooth-Scrolling
   $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
