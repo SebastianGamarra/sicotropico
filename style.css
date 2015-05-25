@@ -179,7 +179,7 @@ h1 {
   transition: all 0.3s ease-in;
 }
 .thumb:hover {
-  -webkit-filter: brightness(2);
+  -webkit-filter: brightness(1.5);
   transition: all 0.3s ease-out;
 }
 .contact-content {
@@ -284,7 +284,7 @@ x {
     width: 100%;
   }
   .black-square {
-    padding: 15px 0px;
+    padding: 5px 0px;
   }
   .album {
     margin-bottom: 5px;
@@ -295,6 +295,9 @@ x {
   }
   .back-arrow-xs {
     margin-top: 15px;
+  }
+  .contact-content {
+    font-size: 0.9em;
   }
 }
 @media (max-width: 740px) and (orientation: landscape) {
